@@ -33,7 +33,7 @@
 	  width: 100%;
 	}
 
-	div img {
+	div a img {
 	  position: absolute;
 	  top: 0;
 	  left: 0;
@@ -45,7 +45,7 @@
 	}
 
 	@media only screen and (max-width: 600px) {
-		div img {
+		div a img {
 			max-width: 600px;
 		}
 	}
@@ -106,12 +106,16 @@ window.onload=function(){
 </head>
 <body>
 
+
+<div id="banderaRD" style="float: left; padding: 2px">
+	<img src="bandera_rd.png" width="50" border="1">
+</div>
+<div id="cacerola" class="shake-constant">
+	<a href="" id="play"><img src="./Cacerolazo_files/cacerola.jpg"></a>
+</div>
 <audio id="audio" preload="" loop="">
-  <source src="https://www.icacerola.cl/cacerolazo3.mp3" type="audio/mpeg">
-  <source src="https://www.icacerola.cl/cacerolazo3.ogg" type="audio/ogg">
-</audio>
-
-<div id="cacerola" class="shake-constant shake-slow"><a href="https://icacerola.cl/#" id="play"><img src="./Cacerolazo_files/cacerola.jpg"></a></div>
-
+		<source src="https://www.icacerola.cl/cacerolazo3.mp3" type="audio/mpeg">
+		<source src="https://www.icacerola.cl/cacerolazo3.ogg" type="audio/ogg">
+	  </audio>
 
 </body></html>
